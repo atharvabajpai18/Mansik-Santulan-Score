@@ -1,14 +1,7 @@
 (() => {
   "use strict";
 
-  const LOCAL_API = "http://127.0.0.1:8000";
-  const REMOTE_API = "https://mansik-santulan-score.onrender.com";
-  const API_BASE =
-    window.location.hostname === "localhost" ||
-    window.location.hostname === "127.0.0.1" ||
-    window.location.protocol === "file:"
-      ? LOCAL_API
-      : REMOTE_API;
+  const API_BASE = "https://mansik-santulan-score.onrender.com";
 
   const form = document.getElementById("predict-form");
   const submitBtn = document.getElementById("submit-btn");
